@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sr" ng-app="CakumPakum">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fb:admins" content="{1059801453}"/>
+    <title>CakumPakumBB</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- FACEBOOK COMMENTS PLUGIN -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/sr_RS/sdk.js#xfbml=1&version=v10.0" nonce="EXWxiNge"></script>
+    <!-- FACEBOOK COMMENTS PLUGIN END -->
+
+    <header>
+        <div id="logo">
+            <a href="#"><img id="logo__img" src="assets/logo.png" alt="Logo"></a>
+        </div>
+
+        <div>
+            <ul class="nav">
+                <li class="nav__item"><a class="nav__link" href="#about-us" target="_self">O nama</a></li>
+                <li class="nav__item"><a class="nav__link" href="#services" target="_self">Usluge</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Utisci</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Posao</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main--container">
+        <ui-view></ui-view>
+    </main>
+
+    <footer>
+        <div>
+            <ul id="copyright">
+                <li class="copyright__item">Copyright &copy 2021 <span>Cakum Pakum Bajina Bašta</span></li>
+                <li class="copyright__item">Created by <a href="#"><img id="dev--logo" src="assets/webdev-name.svg" alt="Eruraina"></a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul id="phone">Telefon:
+                <li class="phone__item">+381 66 8580488</li>
+                <li class="phone__item">+381 65 2866254</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul id="profiles">
+                <li class="profiles__item"><a href="https://www.instagram.com/cakumpakumbb/" target="_blank"><img class="profiles__img" src="assets/icons/instagram.svg" alt="instagram link"></a></li>
+                <li class="profiles__item"><a href="#"><img class="profiles__img" src="assets/icons/facebook.svg" alt="facebook link"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    
+    <script src="script/lib/angular.min.js"></script>
+    <script src="script/lib/angular-ui-router.min.js"></script>
+    <script src="src/cakumpakum.module.js"></script>
+    <script src="src/routes.js"></script>
+
+
+</body>
+</html>
